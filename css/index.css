@@ -1,0 +1,151 @@
+@import "./root.css";
+
+.splide__slide img {
+  object-fit: contain;
+  height: 80vh;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.school-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.about-school-section, .director-message-text {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-school-section h3, .director-message-text h3 {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+.about-school-section h2, .director-message-text h2 {
+  font-size: 2rem;
+}
+
+.about-school-section p, .director-message-text p {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.about-school-icons-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons-1, .icons-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-1 span i, .icons-2 span i {
+  color: var(--red);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.icons-1 span, .icons-2 span {
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.director-message {
+  background: rgb(61,61,61);
+  background: linear-gradient(90deg, rgba(61,61,61,1) 0%, rgba(176,176,176,1) 24%, rgba(231,231,231,1) 100%);
+  padding: 4rem;
+  display: flex;
+}
+
+.director-message-text a, .gallery a {
+  color: var(--red);
+  transition: all ease-in-out 200ms;
+}
+
+.director-message-text a:hover, .gallery a:hover {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.gallery, .facilities {
+  padding: 4rem;
+}
+
+.gallery h2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-section {
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+}
+.iamge-section {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.gallery-image {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .splide__slide img {
+  object-fit: contain;
+  height: 60vh;
+}
+
+.about-school-section h3, .director-message-text h3 {
+  font-size: 1.15rem;
+}
+
+.about-school-section h2, .director-message-text h2 {
+  font-size: 1.25rem;
+}
+
+.about-school-section p, .director-message-text p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.icons-1 span i, .icons-2 span i {
+  font-size: 1.25rem;
+}
+
+.icons-1 span, .icons-2 span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.image-section {
+  grid-template-columns: auto auto;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .school-container, .director-message {
+  align-items: center;
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 665px) {
+  .image-section {
+  grid-template-columns: auto;
+}
+}

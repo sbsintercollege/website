@@ -1,0 +1,268 @@
+:root {
+  --gray: #272727;
+  --white: #FFFFFF;
+  --red: #d42e32;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--gray);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hamburger-close, .hamburger-open {
+  display: none;
+}
+
+.label {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+  background-color: var(--gray);
+}
+.label span, .label span i {
+  margin-left: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.menu-main a{
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all ease-in-out 200ms;
+}
+
+.selected a{
+  color: var(--red);
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+.menu-main:hover a {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.menu-main:hover a + .sub-menu{
+  font-weight: 600;
+  display: block;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  z-index: 100;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.menu {
+  padding: 0.5rem 1rem; 
+  transition: all ease-in-out 200ms;
+}
+
+.menu:hover {
+  color: var(--white);
+  background-color: var(--gray);
+  cursor: pointer;
+}
+
+.down::after {
+  content: "+";
+  margin-left: 0.25rem;
+}
+
+.menu-main:hover .down::after {
+  content: "-";
+  margin-left: 0.25rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.menu:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.menu:last-child {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.footer {
+  background-color: var(--gray);
+  padding: 4rem;
+}
+
+.upper-column-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us h3, .school-map h3 {
+  color: var(--white);
+  padding: 0 0 2rem 0;
+}
+
+.about-us p {
+  color: #c7c7c7;
+  line-height: 2rem;
+}
+
+.contact-us {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.email, .call-us, .google-direction {
+  flex-grow: 1;
+  display: flex;
+  padding: 1rem 0;
+  background-color: #333333;
+  align-items: center;
+}
+
+.email i, .call-us i, .google-direction i {
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--red);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.email p, .call-us p, .google-direction p {
+  color: #c7c7c7;
+  margin-right: 1rem;
+}
+
+.email a, .call-us a, .google-direction a {
+  color: var(--white);
+  margin-right: 1rem;
+}
+
+.about-us {
+    width: 20%;
+  }
+
+@media screen and (max-width: 1024px) {
+
+  .label {
+  padding: 0.25rem;
+}
+.label span, .label span i {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+
+.nav-header {
+  flex-direction: column;
+}
+
+.nav-menu {
+  padding: 1rem 0;
+  background-color: var(--gray);
+}
+
+.menu-main a{
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.selected a{
+  color: var(--red);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.menu-main:hover a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu-main:hover a + .sub-menu{
+  font-weight: 500;
+}
+
+.contact-us {
+  flex-direction: column;
+}
+
+.email, .call-us, .google-direction {
+  background-color: var(--gray);
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-close, .hamburger-open {
+  display: block;
+}
+
+  .nav-menu {
+    flex-direction: column;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: -100%
+  }
+
+  .nav-menu.open {
+    left: 0;
+  }
+
+  .hamburger-open {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  .hamburger-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  .hamburger-close i {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  .hamburger-open i {
+    font-size: 1.5rem;
+    color: #333333;
+  }
+  .upper-column-footer {
+    flex-direction: column;
+  }
+
+  .about-us {
+    width: 100%;
+  }
+}
