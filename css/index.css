@@ -104,6 +104,51 @@
   text-align: center;
 }
 
+.hover-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-card {
+  position: relative;
+  display: inline-block;
+  background-color: var(--white);
+  padding: 3rem;
+  border: var(--red) 0.75rem solid;
+  text-align: center;
+}
+
+.hover-close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hover-title {
+  color: var(--red);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hover-image-section {
+  display: flex;
+}
+
+.hover-image img {
+  height: 400px;
+  width: 300px;
+}
+
 @media screen and (max-width: 1024px) {
   .splide__slide img {
   object-fit: contain;
@@ -142,6 +187,27 @@
   align-items: center;
   flex-direction: column;
 }
+.hover-card {
+  padding: 1rem;
+}
+
+.hover-image img {
+  height: 200px;
+  width: 150px;
+}
+
+.hover-image h2 {
+  font-size: 1rem;
+}
+
+.hover-title {
+  font-size: 1.25rem;
+}
+
+.hover-close-icon {
+  font-size: 1.5rem;
+}
+
 }
 
 @media screen and (max-width: 665px) {
