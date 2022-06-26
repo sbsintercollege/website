@@ -5,7 +5,7 @@
     } ).mount();
   } );
 
-  document.querySelector('html').style.overflow = "hidden";
+  // document.querySelector('html').style.overflow = "hidden";
 
   var hoverElement = document.getElementsByClassName('hover-element');
 

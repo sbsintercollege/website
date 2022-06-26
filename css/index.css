@@ -104,7 +104,7 @@
   text-align: center;
 }
 
-.hover-element {
+/* .hover-element {
   position: absolute;
   top: 0;
   right: 0;
@@ -115,16 +115,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.hover-card {
+/* .hover-card {
   position: relative;
   display: inline-block;
   background-color: var(--white);
   padding: 3rem;
   border: var(--red) 0.75rem solid;
   text-align: center;
-}
+} */
 
 .hover-close-icon {
   position: absolute;
@@ -138,15 +138,25 @@
   color: var(--red);
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .hover-image-section {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.hover-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .hover-image img {
-  height: 400px;
-  width: 300px;
+  height: 200px;
+  width: 150px;
 }
 
 @media screen and (max-width: 1024px) {
