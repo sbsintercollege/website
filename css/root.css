@@ -13,6 +13,14 @@
   box-sizing: border-box;
 }
 
+.header {
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background-color: #FFF;
+  box-shadow: 1px 1px 5px 1px #333;
+}
+
 .hamburger-close, .hamburger-open {
   display: none;
 }
@@ -215,6 +223,12 @@
   background-color: var(--gray);
 }
 
+.nav-header > div::after {
+  content: "SBS PUBLIC SCHOOL";
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -222,12 +236,18 @@
   display: block;
 }
 
+.nav-header > div::after {
+  content: "SBS PUBLIC SCHOOL";
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
   .nav-menu {
     flex-direction: column;
     z-index: 1000;
     position: absolute;
-    bottom: 0;
     top: 0;
+    height: 100vh;
     left: -100%
   }
 
