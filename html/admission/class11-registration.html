@@ -9,9 +9,9 @@
   <script src="https://kit.fontawesome.com/1779ee6e62.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js"></script>
-  <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="../../css/index.css">
+  <script src="../../js/index.js"></script>
+  <script src="../../js/main.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -32,7 +32,7 @@
       </span>
     </div>
     <div class="nav-header">
-      <img src="./assets/logo.jpg" width="120" alt="sbs-inter-college">
+      <img src="../../assets/logo.jpg" width="120" alt="sbs-inter-college">
       <button class="hamburger-open" id="open-menu" onclick="openMenu()">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -40,7 +40,7 @@
         <button class="hamburger-close" id="close-menu" onclick="closeMenu()">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <li class="menu-main selected"><a href="#">Home</a></li>
+        <li class="menu-main"><a href="../../index.html">Home</a></li>
         <li class="menu-main">
           <a href="#" class="down">About</a>
           <ul class="sub-menu">
@@ -61,7 +61,7 @@
             <li class="menu">Faculty List</li>
           </ul>
         </li>
-        <li class="menu-main">
+        <li class="menu-main selected">
           <a href="#" class="down">Admission</a>
           <ul class="sub-menu">
             <li class="menu">Fee Structure</li>
@@ -69,8 +69,8 @@
             <li class="menu">Admission Schedule</li>
             <li class="menu">Admission Guidelines</li>
             <li class="menu">Download Application Form</li>
-            <li class="menu"><a href="./html/admission/class9-registration.html">Class 9th Online Registration</a></li>
-            <li class="menu"><a href="./html/admission/clas11-registration.html">Class 11th Online Registration</a></li>
+            <li class="menu" onclick="window.location.href = './class9-registration.html'">Class 9th Online Registration</li>
+            <li class="menu">Class 11th Online Registration</li>
           </ul>
         </li>
         <li class="menu-main">
@@ -103,7 +103,36 @@
     </div>
   </div>
   <div>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHASTDql9h8yAGtVpRZLDsRagnSk5LBCjUadghHKNZtAqt5g/viewform?embedded=true" width="640" height="2350" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHASTDql9h8yAGtVpRZLDsRagnSk5LBCjUadghHKNZtAqt5g/viewform?embedded=true" width="100%" height="2650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+  <div class="footer">
+    <div class="upper-column-footer">
+      <div class="about-us" style="margin-right: 1rem; margin-bottom: 1rem;">
+        <h3>About Us</h3>
+        <p>SBS Inter College has been established by the prime grace &amp; inspiration of lord Sh. Krishna. We have the
+          vision to provide a modern learning level of education at Kheriya (Raya).</p>
+      </div>
+      <div class="school-map" style="width: 50%; margin-left: 1rem;">
+        <h3>School Map</h3>
+      </div>
+    </div>
+
+    <div class="contact-us">
+      <div class="email"> <i class="fa fa-comment-alt"></i>
+        <p>Drop Us a Line</p>
+        <p><a href="mailto:sbscollege7@gmail.com">sbscollege7@gmail.com</a></p>
+      </div>
+      <div class="call-us"> <i class="fa fa-phone-volume"></i>
+        <p class="call">Call Us Now</p>
+        <p><a href="tel:+91-9719970179">+91-9719970179</a></p>
+      </div>
+      <div class="google-direction"> <i class="fa fa-map-marker-alt"></i>
+        <p>Get Direction</p>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.656019023895!2d77.82406571498692!3d27.666112282809017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973671e2881b237%3A0xc3e56314c1764d5!2sS.B.S%20inter%20collage%20kheriya%20neemgaon%20mant%20mathura!5e0!3m2!1sen!2sin!4v1657622962742!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
   </div>
 </body>
 

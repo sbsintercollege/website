@@ -10,7 +10,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js"></script>
   <script src="./js/main.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,8 +68,8 @@
             <li class="menu">Admission Schedule</li>
             <li class="menu">Admission Guidelines</li>
             <li class="menu">Download Application Form</li>
-            <li class="menu"><a href="./html/admission/class9-registration.html">Class 9th Online Registration</a></li>
-            <li class="menu"><a href="./html/admission/clas11-registration.html">Class 11th Online Registration</a></li>
+            <li class="menu" onclick="window.location.href = './html/admission/class9-registration.html'">Class 9th Online Registration</li>
+            <li class="menu" onclick="window.location.href = './html/admission/class11-registration.html'">Class 11th Online Registration</li>
           </ul>
         </li>
         <li class="menu-main">
@@ -103,24 +102,35 @@
     </div>
   </div>
   <!-- Slider -->
-  <div class="slider">
-    <section class="splide" id="image-carousel" role="group">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide"><img src="./assets/slider (3).jpeg"></li>
-          <li class="splide__slide"><img src="./assets/slider (4).jpeg"></li>
-          <li class="splide__slide"><img src="./assets/slider (5).jpeg"></li>
-          <li class="splide__slide"><img src="./assets/slider (6).jpeg"></li>
-          <li class="splide__slide"><img src="./assets/slider (8).jpeg"></li>
-          <li class="splide__slide"><img src="./assets/new-bus.jpeg"></li>
-        </ul>
-      </div>
-    </section>
-  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="./assets/new-bus.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="./assets/school.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="./assets/slider (1).jpeg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
   <!-- School Introduction -->
   <div class="school-container">
     <div class="school-img-section">
-      <img src="./assets/school.jpeg" width="450" alt="photo 1">
+      <img src="./assets/school.jpeg" width="350" alt="photo 1">
     </div>
     <div class="about-school-section">
       <h3 style="margin-bottom: 1rem;">Welcome to</h3>
@@ -269,10 +279,14 @@
       </div>
       <div class="google-direction"> <i class="fa fa-map-marker-alt"></i>
         <p>Get Direction</p>
-        <p><a href="https://goo.gl/maps/3BLiSsMfHzDG9Z2k6" target="_blank">Kheriya, Neemgaon</a></p>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.656019023895!2d77.82406571498692!3d27.666112282809017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973671e2881b237%3A0xc3e56314c1764d5!2sS.B.S%20inter%20collage%20kheriya%20neemgaon%20mant%20mathura!5e0!3m2!1sen!2sin!4v1657622962742!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
+  
+  <script src="./js/index2.js"></script>
 </body>
 
 </html>
